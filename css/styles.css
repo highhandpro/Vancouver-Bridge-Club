@@ -224,7 +224,7 @@ button {
   color: inherit;
 }
 .brand-logo-img {
-  height: 52px;
+  height: 74px;
   width: auto;
   object-fit: contain;
   display: block;
@@ -232,7 +232,7 @@ button {
 }
 [data-theme="dark"] .brand-logo-img {
   background: #ffffff;
-  padding: 4px 8px;
+  padding: 4px 10px;
   border-radius: var(--radius-md);
   box-shadow: var(--shadow-sm);
 }
@@ -938,6 +938,9 @@ button {
 }
 
 @media (max-width: 768px) {
+  .brand-logo-img {
+    height: 52px;
+  }
   .main-nav {
     display: none;
     position: absolute;
