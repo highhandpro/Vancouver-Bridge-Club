@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" data-text-size="normal">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Partnership Desk | Vancouver Bridge Club (ACBL Unit 452)</title>
+  <meta name="description" content="Find a bridge partner for upcoming games at Vancouver Bridge Club. Browse player requests, post your availability, or contact the club partnership coordinator.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Accessibility Toolbar -->
+  <div class="accessibility-bar" role="region" aria-label="Accessibility Toolbar">
+    <div class="accessibility-container">
+      <div class="access-club-badge">
+        <span class="access-badge-dot"></span>
+        <span>Vancouver Bridge Club • ACBL Unit 452 • Club #118489</span>
+      </div>
+      <div class="access-controls">
+        <div class="font-scale-group" title="Adjust text size for easier reading">
+          <span style="font-size:0.75rem; margin-right:4px;">Text Size:</span>
+          <button class="font-scale-btn active" data-size="normal">A</button>
+          <button class="font-scale-btn" data-size="large">A+</button>
+          <button class="font-scale-btn" data-size="xlarge">A++</button>
+        </div>
+        <button class="theme-toggle-btn" id="theme-toggle-btn">🌙 Dark Mode</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="header-container">
+      <a href="index.html" class="brand-link">
+        <img src="assets/logo.svg" alt="Vancouver Bridge Club Logo" class="brand-logo-img">
+      </a>
+      <button class="mobile-menu-toggle" id="mobile-menu-btn" aria-label="Toggle navigation menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+      <nav class="main-nav" id="main-nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="schedule.html" class="nav-link">📅 Schedule & Calendar</a>
+        <a href="results.html" class="nav-link">🏆 Results & Scores</a>
+        <a href="partnership.html" class="nav-link">🤝 Partnership Desk</a>
+        <a href="learn.html" class="nav-link">📚 Lessons & Rules</a>
+        <a href="governance.html" class="nav-link">🏛️ Unit 452 & Board</a>
+        <a href="community.html" class="nav-link">🎨 Gallery & Links</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main-container">
+
+    <div class="section-header">
+      <span class="section-tag">🤝 Player Matchmaking</span>
+      <h1 class="section-title">Digital Partnership Desk</h1>
+      <p class="section-subtitle">
+        Never miss a game! Find a partner for an upcoming session, browse member requests, or post your own availability with your preferred bidding conventions.
+      </p>
+    </div>
+
+    <!-- Top Action & Filter Bar -->
+    <div class="card" style="margin-bottom: 30px; padding: 20px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px;">
+        <div style="display: flex; gap: 12px; flex-wrap: wrap; flex: 1; max-width: 700px;">
+          <input type="text" id="partner-search-input" class="form-control" placeholder="Search by player name, system, or date..." style="max-width: 320px;">
+          <select id="partner-bracket-select" class="form-control" style="max-width: 220px;">
+            <option value="all">All Skill Levels</option>
+            <option value="Novice">Novice (0-100)</option>
+            <option value="Intermediate">Intermediate (0-750)</option>
+            <option value="Open">Open Pairs</option>
+            <option value="Swiss">Swiss Teams</option>
+          </select>
+        </div>
+
+        <div style="display: flex; align-items: center; gap: 12px;">
+          <span class="badge badge-blue" id="partnership-count-badge">Loading requests...</span>
+          <button class="btn btn-primary" id="btn-open-partner-modal">
+            ➕ Post a Request
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Active Partnership Requests Grid -->
+    <div class="grid-3" id="partnership-list-container" style="margin-bottom: 40px;">
+      <!-- Populated dynamically by js/partnership.js -->
+    </div>
+
+    <!-- Helpful Coordinator & Guaranteed Host Cards -->
+    <div class="grid-2" style="margin-bottom: 30px;">
+      <div class="card">
+        <h3 class="card-title">📞 Partnership Coordinator</h3>
+        <p class="card-desc">
+          Prefer personal assistance? Contact our club partnership coordinator or call the club desk before game time. We do our best to match every single player with an enjoyable partner!
+        </p>
+        <div style="background: var(--bg-main); padding: 14px; border-radius: var(--radius-md); font-size: 0.95rem; margin-bottom: 12px;">
+          <div><strong>Coordinator:</strong> Tom Reynolds</div>
+          <div><strong>Club Phone:</strong> <a href="tel:3607373772">(360) 737-3772</a></div>
+          <div><strong>Email:</strong> <a href="mailto:partnerships.vbc@gmail.com">partnerships.vbc@gmail.com</a></div>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3 class="card-title">🛡️ Guaranteed Standby Host Program</h3>
+        <p class="card-desc">
+          On <strong>Saturday 11:00 AM Open Pairs</strong> games, VBC provides a dedicated standby host player. If you show up at the club 15 minutes before game time without a partner, you are guaranteed a seat!
+        </p>
+        <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 14px;">
+          No advance reservation necessary on Saturdays—just come ready to play.
+        </p>
+        <a href="schedule.html" class="btn btn-outline btn-sm" style="align-self: flex-start;">Check Saturday Dates →</a>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Modal: Post Partnership Request -->
+  <div class="modal-backdrop" id="partner-modal-backdrop" role="dialog" aria-modal="true">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3 class="modal-title">Post a Partnership Request</h3>
+        <button class="modal-close-btn" id="partner-modal-close" aria-label="Close modal">&times;</button>
+      </div>
+      <form id="partner-request-form">
+        <div class="modal-body">
+          <div class="form-group">
+            <label class="form-label" for="req-name">Your Full Name <span style="color:red;">*</span></label>
+            <input type="text" id="req-name" required class="form-control" placeholder="e.g. Jane Doe">
+          </div>
+
+          <div class="grid-2" style="gap: 12px;">
+            <div class="form-group">
+              <label class="form-label" for="req-mps">Masterpoint Total</label>
+              <input type="text" id="req-mps" class="form-control" placeholder="e.g. 250 MPs">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="req-bracket">Skill Bracket</label>
+              <select id="req-bracket" class="form-control">
+                <option value="Novice (0-100)">Novice (0-100)</option>
+                <option value="Intermediate (0-750)">Intermediate (0-750)</option>
+                <option value="0-1500 Limited">0-1500 Limited</option>
+                <option value="Open Pairs" selected>Open Pairs</option>
+                <option value="Swiss Teams">Swiss Teams</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="grid-2" style="gap: 12px;">
+            <div class="form-group">
+              <label class="form-label" for="req-date">Target Game Date <span style="color:red;">*</span></label>
+              <input type="text" id="req-date" required class="form-control" placeholder="e.g. Wednesday, Aug 19">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="req-session">Session Time</label>
+              <input type="text" id="req-session" class="form-control" placeholder="e.g. 11:30 AM Open Pairs">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="req-system">Preferred Bidding System & Conventions</label>
+            <input type="text" id="req-system" class="form-control" placeholder="e.g. 2/1 Game Force, 15-17 NT, Stayman/Transfers">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="req-contact">Contact Information (Phone / Email) <span style="color:red;">*</span></label>
+            <input type="text" id="req-contact" required class="form-control" placeholder="e.g. Call/Text: (360) 555-0199 or email@domain.com">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="req-notes">Additional Notes</label>
+            <textarea id="req-notes" class="form-control" rows="2" placeholder="e.g. Looking for a casual friendly game, happy to play basic standard american."></textarea>
+          </div>
+
+          <div style="margin-top: 20px; display: flex; justify-content: flex-end; gap: 10px;">
+            <button type="button" class="btn btn-outline" onclick="closePartnerModal()">Cancel</button>
+            <button type="submit" class="btn btn-primary">Submit Request</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <h3>Vancouver Bridge Club</h3>
+        <p style="font-size: 0.9rem; line-height: 1.5; margin-bottom: 12px;">
+          A non-profit duplicate bridge club operated by ACBL Unit 452 in southwest Washington State.
+        </p>
+        <p style="font-size: 0.85rem; color: #64748b;">
+          6503 E Mill Plain Blvd, Suite H • Vancouver, WA 98661
+        </p>
+      </div>
+      <div class="footer-links-col">
+        <h4>Navigation</h4>
+        <ul class="footer-links-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="schedule.html">Schedule & Calendar</a></li>
+          <li><a href="results.html">Game Results</a></li>
+          <li><a href="partnership.html">Partnership Desk</a></li>
+        </ul>
+      </div>
+      <div class="footer-links-col">
+        <h4>Resources</h4>
+        <ul class="footer-links-list">
+          <li><a href="learn.html">Lessons & Alerts</a></li>
+          <li><a href="governance.html">Unit 452 Board</a></li>
+          <li><a href="community.html">Cartoons & Gallery</a></li>
+        </ul>
+      </div>
+      <div class="footer-links-col">
+        <h4>Affiliations</h4>
+        <ul class="footer-links-list">
+          <li><a href="https://www.acbl.org/" target="_blank" rel="noopener">ACBL Official Website ↗</a></li>
+          <li><a href="https://web2.acbld20.org/" target="_blank" rel="noopener">ACBL District 20 ↗</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div>&copy; 2026 Vancouver Bridge Club (ACBL Unit 452). All rights reserved.</div>
+      <div>Designed with modern accessibility standards (WCAG 2.1)</div>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/partnership.js"></script>
+</body>
+</html>

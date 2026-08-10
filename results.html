@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" data-text-size="normal">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game Results & Masterpoint Races | Vancouver Bridge Club (Unit 452)</title>
+  <meta name="description" content="View official ACBL Live for Clubs results, The Common Game scores and hand analysis, and Unit 452 Masterpoint Race standings.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Accessibility Toolbar -->
+  <div class="accessibility-bar" role="region" aria-label="Accessibility Toolbar">
+    <div class="accessibility-container">
+      <div class="access-club-badge">
+        <span class="access-badge-dot"></span>
+        <span>Vancouver Bridge Club • ACBL Unit 452 • Club #118489</span>
+      </div>
+      <div class="access-controls">
+        <div class="font-scale-group" title="Adjust text size for easier reading">
+          <span style="font-size:0.75rem; margin-right:4px;">Text Size:</span>
+          <button class="font-scale-btn active" data-size="normal">A</button>
+          <button class="font-scale-btn" data-size="large">A+</button>
+          <button class="font-scale-btn" data-size="xlarge">A++</button>
+        </div>
+        <button class="theme-toggle-btn" id="theme-toggle-btn">🌙 Dark Mode</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="header-container">
+      <a href="index.html" class="brand-link">
+        <img src="assets/logo.svg" alt="Vancouver Bridge Club Logo" class="brand-logo-img">
+      </a>
+      <button class="mobile-menu-toggle" id="mobile-menu-btn" aria-label="Toggle navigation menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+      <nav class="main-nav" id="main-nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="schedule.html" class="nav-link">📅 Schedule & Calendar</a>
+        <a href="results.html" class="nav-link">🏆 Results & Scores</a>
+        <a href="partnership.html" class="nav-link">🤝 Partnership Desk</a>
+        <a href="learn.html" class="nav-link">📚 Lessons & Rules</a>
+        <a href="governance.html" class="nav-link">🏛️ Unit 452 & Board</a>
+        <a href="community.html" class="nav-link">🎨 Gallery & Links</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main-container">
+
+    <div class="section-header">
+      <span class="section-tag">🏆 Game Scores & Standings</span>
+      <h1 class="section-title">Club Results & Masterpoint Races</h1>
+      <p class="section-subtitle">
+        Access official ACBL matchpoint scores, Common Game hand records, expert play analysis, and Unit 452 annual race leaderboards.
+      </p>
+    </div>
+
+    <!-- Primary Live Results Cards -->
+    <div class="grid-2" style="margin-bottom: 40px;">
+      <!-- Card 1: ACBL Live -->
+      <div class="card" style="border: 2px solid #3b82f6;">
+        <div class="card-icon" style="background: #eff6ff; color: #1e3a8a;">♠</div>
+        <span class="badge badge-blue" style="align-self: flex-start; margin-bottom: 8px;">Official ACBL Feed</span>
+        <h2 class="card-title">VBC ACBL Live for Clubs</h2>
+        <p class="card-desc">
+          Official matchpoint scores, section rankings, pair percentages, and masterpoint awards updated immediately after each game concludes.
+        </p>
+        <div style="background: var(--bg-main); padding: 12px 16px; border-radius: var(--radius-md); margin-bottom: 16px; font-size: 0.9rem;">
+          <div><strong>Club Sanction:</strong> Vancouver BC #118489</div>
+          <div><strong>Unit / District:</strong> ACBL Unit 452 • District 20</div>
+        </div>
+        <a href="https://my.acbl.org/club-results/118489" target="_blank" rel="noopener" class="btn btn-primary">
+          View VBC Scores on ACBL Live ↗
+        </a>
+      </div>
+
+      <!-- Card 2: The Common Game -->
+      <div class="card" style="border: 2px solid #10b981;">
+        <div class="card-icon" style="background: #f0fdf4; color: #059669;">♣</div>
+        <span class="badge badge-green" style="align-self: flex-start; margin-bottom: 8px;">Hand Analysis & Records</span>
+        <h2 class="card-title">The Common Game Results</h2>
+        <p class="card-desc">
+          Compare your scores across hundreds of clubs nationwide. Review every deal, double-dummy par contracts, and expert commentary.
+        </p>
+        <div style="background: var(--bg-main); padding: 12px 16px; border-radius: var(--radius-md); margin-bottom: 16px; font-size: 0.9rem;">
+          <div><strong>Features:</strong> Hand Records, Expert Analysis, Nationwide Ranking</div>
+          <div><strong>Club ID:</strong> 118489 (Vancouver Bridge Club)</div>
+        </div>
+        <a href="https://tcgcloud.bridgefinesse.com/ClubWebHost/118489/" target="_blank" rel="noopener" class="btn btn-accent">
+          Open VBC Common Game Feed ↗
+        </a>
+      </div>
+    </div>
+
+    <!-- Masterpoint Races & Sister Club Results -->
+    <div class="section-header">
+      <span class="section-tag">🎖️ Masterpoint Tracking</span>
+      <h2 class="section-title">Unit 452 Races & Regional Standings</h2>
+      <p class="section-subtitle">Track annual race leaders and results for sister clubs across Southwest Washington.</p>
+    </div>
+
+    <div class="grid-3" style="margin-bottom: 40px;">
+      <!-- Ace of Clubs -->
+      <div class="card">
+        <h3 class="card-title">🃏 Ace of Clubs Race</h3>
+        <p class="card-desc">
+          Recognizes players who earn the most masterpoints exclusively in sanctioned club sessions within Unit 452 during the calendar year.
+        </p>
+        <a href="http://web2.acbl.org/as400/mpraces/unit/2020/ac452.htm" target="_blank" rel="noopener" class="btn btn-outline btn-sm">
+          View Ace of Clubs Standings ↗
+        </a>
+      </div>
+
+      <!-- Mini-McKenney -->
+      <div class="card">
+        <h3 class="card-title">🏅 Mini-McKenney Race</h3>
+        <p class="card-desc">
+          Tracks all masterpoints won in club games, sectional, regional, and North American Bridge Championships (NABC) by rank bracket.
+        </p>
+        <a href="http://web2.acbl.org/as400/mpraces/unit/2020/mm452.htm" target="_blank" rel="noopener" class="btn btn-outline btn-sm">
+          View Mini-McKenney Standings ↗
+        </a>
+      </div>
+
+      <!-- Rank Advancement -->
+      <div class="card">
+        <h3 class="card-title">⭐ Rank Advancement</h3>
+        <p class="card-desc">
+          Congratulations to Unit 452 members achieving new milestones—Junior Master, Club Master, Sectional, Regional, and Life Master ranks!
+        </p>
+        <a href="https://web2.acbld20.org/vbc/rank_change.html" target="_blank" rel="noopener" class="btn btn-outline btn-sm">
+          See Recent Rank Advancements ↗
+        </a>
+      </div>
+
+      <!-- Longview ACBL Live -->
+      <div class="card">
+        <h3 class="card-title">🏛️ Longview BC ACBL Live</h3>
+        <p class="card-desc">
+          Sister club game results and masterpoints for Longview Bridge Club (Sanction #140947).
+        </p>
+        <a href="https://my.acbl.org/club-results/140947" target="_blank" rel="noopener" class="btn btn-outline btn-sm">
+          Longview Live Scores ↗
+        </a>
+      </div>
+
+      <!-- Longview Common Game -->
+      <div class="card">
+        <h3 class="card-title">🌐 Longview Common Game</h3>
+        <p class="card-desc">
+          Common Game hand records and comparisons for Longview Bridge Club games.
+        </p>
+        <a href="https://tcgcloud.bridgefinesse.com/ClubWebHost/140947/" target="_blank" rel="noopener" class="btn btn-outline btn-sm">
+          Longview Common Game ↗
+        </a>
+      </div>
+
+      <!-- ACBL Live Tournaments -->
+      <div class="card">
+        <h3 class="card-title">🏆 ACBL Live Tournaments</h3>
+        <p class="card-desc">
+          Check live results for Sectionals, Regionals, and NABCs across District 20 and North America.
+        </p>
+        <a href="https://live.acbl.org/" target="_blank" rel="noopener" class="btn btn-outline btn-sm">
+          Browse ACBL Tournaments ↗
+        </a>
+      </div>
+    </div>
+
+    <!-- Masterpoint Guide Reference -->
+    <div class="card" style="background: var(--bg-card); padding: 24px;">
+      <h3 class="card-title" style="margin-bottom: 12px;">📊 Understanding Masterpoint Colors</h3>
+      <div class="grid-4" style="gap: 16px;">
+        <div style="background: var(--bg-main); padding: 14px; border-radius: var(--radius-md); border-left: 4px solid #0f172a;">
+          <strong>Black Points:</strong> Won at regular sanctioned club sessions like our weekly games.
+        </div>
+        <div style="background: var(--bg-main); padding: 14px; border-radius: var(--radius-md); border-left: 4px solid #94a3b8;">
+          <strong>Silver Points:</strong> Won at Sectional tournaments and Sectional Tournaments at Clubs (STaC).
+        </div>
+        <div style="background: var(--bg-main); padding: 14px; border-radius: var(--radius-md); border-left: 4px solid #dc2626;">
+          <strong>Red Points:</strong> Won at Regional tournaments and special North American events.
+        </div>
+        <div style="background: var(--bg-main); padding: 14px; border-radius: var(--radius-md); border-left: 4px solid #d97706;">
+          <strong>Gold Points:</strong> Won in qualifying flighted events at Regional tournaments and NABCs.
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <h3>Vancouver Bridge Club</h3>
+        <p style="font-size: 0.9rem; line-height: 1.5; margin-bottom: 12px;">
+          A non-profit duplicate bridge club operated by ACBL Unit 452 in southwest Washington State.
+        </p>
+        <p style="font-size: 0.85rem; color: #64748b;">
+          6503 E Mill Plain Blvd, Suite H • Vancouver, WA 98661
+        </p>
+      </div>
+      <div class="footer-links-col">
+        <h4>Navigation</h4>
+        <ul class="footer-links-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="schedule.html">Schedule & Calendar</a></li>
+          <li><a href="results.html">Game Results</a></li>
+          <li><a href="partnership.html">Partnership Desk</a></li>
+        </ul>
+      </div>
+      <div class="footer-links-col">
+        <h4>Resources</h4>
+        <ul class="footer-links-list">
+          <li><a href="learn.html">Lessons & Alerts</a></li>
+          <li><a href="governance.html">Unit 452 Board</a></li>
+          <li><a href="community.html">Cartoons & Gallery</a></li>
+        </ul>
+      </div>
+      <div class="footer-links-col">
+        <h4>Affiliations</h4>
+        <ul class="footer-links-list">
+          <li><a href="https://www.acbl.org/" target="_blank" rel="noopener">ACBL Official Website ↗</a></li>
+          <li><a href="https://web2.acbld20.org/" target="_blank" rel="noopener">ACBL District 20 ↗</a></li>
+          <li><a href="https://tcgcloud.bridgefinesse.com/ClubWebHost/118489/" target="_blank" rel="noopener">The Common Game ↗</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div>&copy; 2026 Vancouver Bridge Club (ACBL Unit 452). All rights reserved.</div>
+      <div>Designed with modern accessibility standards (WCAG 2.1)</div>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

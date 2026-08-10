@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" data-text-size="normal">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lessons & Bridge Resources | Vancouver Bridge Club (ACBL Unit 452)</title>
+  <meta name="description" content="Bridge education, beginner tutorials, convention charts, alert procedures, and zero tolerance conduct guidelines at Vancouver Bridge Club.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Accessibility Toolbar -->
+  <div class="accessibility-bar" role="region" aria-label="Accessibility Toolbar">
+    <div class="accessibility-container">
+      <div class="access-club-badge">
+        <span class="access-badge-dot"></span>
+        <span>Vancouver Bridge Club • ACBL Unit 452 • Club #118489</span>
+      </div>
+      <div class="access-controls">
+        <div class="font-scale-group" title="Adjust text size for easier reading">
+          <span style="font-size:0.75rem; margin-right:4px;">Text Size:</span>
+          <button class="font-scale-btn active" data-size="normal">A</button>
+          <button class="font-scale-btn" data-size="large">A+</button>
+          <button class="font-scale-btn" data-size="xlarge">A++</button>
+        </div>
+        <button class="theme-toggle-btn" id="theme-toggle-btn">🌙 Dark Mode</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="header-container">
+      <a href="index.html" class="brand-link">
+        <img src="assets/logo.svg" alt="Vancouver Bridge Club Logo" class="brand-logo-img">
+      </a>
+      <button class="mobile-menu-toggle" id="mobile-menu-btn" aria-label="Toggle navigation menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+      <nav class="main-nav" id="main-nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="schedule.html" class="nav-link">📅 Schedule & Calendar</a>
+        <a href="results.html" class="nav-link">🏆 Results & Scores</a>
+        <a href="partnership.html" class="nav-link">🤝 Partnership Desk</a>
+        <a href="learn.html" class="nav-link">📚 Lessons & Rules</a>
+        <a href="governance.html" class="nav-link">🏛️ Unit 452 & Board</a>
+        <a href="community.html" class="nav-link">🎨 Gallery & Links</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main-container">
+
+    <div class="section-header">
+      <span class="section-tag">📚 Education & Rules</span>
+      <h1 class="section-title">Lessons, Conventions & Bridge Resources</h1>
+      <p class="section-subtitle">
+        Sharpen your skills with weekly mini-lessons, official ACBL convention charts, alert procedures, and learning guides for beginners through advanced players.
+      </p>
+    </div>
+
+    <!-- Free Weekly Mini-Lessons Spotlight -->
+    <div class="card" style="border: 2px solid #2563eb; background: var(--bg-card); margin-bottom: 40px; padding: 28px;">
+      <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 20px;">
+        <div style="max-width: 750px;">
+          <span class="badge badge-green" style="margin-bottom: 8px;">Free Weekly Lesson</span>
+          <h2 style="font-family: var(--font-heading); font-size: 1.6rem; margin-bottom: 10px;">Tuesday Morning Bridge Basics & Mentoring</h2>
+          <p style="color: var(--text-muted); font-size: 1rem; line-height: 1.6; margin-bottom: 16px;">
+            Every Tuesday at <strong>10:30 AM</strong>, VBC hosts a 30-minute interactive lesson focused on fundamental bidding, defensive signaling, or declarer technique, followed immediately by our relaxed <strong>11:30 AM Mentored Play session</strong>.
+          </p>
+          <div style="display: flex; flex-wrap: wrap; gap: 12px; font-size: 0.9rem;">
+            <div style="background: var(--bg-main); padding: 8px 14px; border-radius: var(--radius-md);">
+              <strong>When:</strong> Tuesdays • 10:30 AM Mini-Lesson (Free)
+            </div>
+            <div style="background: var(--bg-main); padding: 8px 14px; border-radius: var(--radius-md);">
+              <strong>Play:</strong> 11:30 AM Mentored Play ($8 table fee)
+            </div>
+            <div style="background: var(--bg-main); padding: 8px 14px; border-radius: var(--radius-md);">
+              <strong>Atmosphere:</strong> Questions encouraged, no fear!
+            </div>
+          </div>
+        </div>
+
+        <div style="display: flex; flex-direction: column; gap: 8px;">
+          <a href="https://acbld20.org/vbc/U452_lessons.pdf" target="_blank" rel="noopener" class="btn btn-primary">
+            📄 Lesson Schedule (PDF) ↗
+          </a>
+          <a href="partnership.html" class="btn btn-outline btn-sm">Find Tuesday Partner</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Official ACBL Reference & Rulebook Cards -->
+    <div class="section-header">
+      <span class="section-tag">⚖️ Official References</span>
+      <h2 class="section-title">ACBL Guidelines, Alerts & Convention Charts</h2>
+      <p class="section-subtitle">Official resources governing bidding conventions, alert protocols, and table rulings.</p>
+    </div>
+
+    <div class="grid-3" style="margin-bottom: 40px;">
+      <!-- Convention Charts -->
+      <div class="card">
+        <h3 class="card-title">📋 Convention Charts</h3>
+        <p class="card-desc">
+          Official ACBL charts detailing permitted conventions in Basic, Basic+, Open, and Open+ flighted events.
+        </p>
+        <a href="http://web2.acbl.org/documentLibrary/about/CONVENTIONCHARTS9_19.pdf" target="_blank" rel="noopener" class="btn btn-outline btn-sm">
+          Download Charts (PDF) ↗
+        </a>
+      </div>
+
+      <!-- Alert Procedures -->
+      <div class="card">
+        <h3 class="card-title">🔔 Alert Procedures</h3>
+        <p class="card-desc">
+          Full explanation of which artificial bids must be alerted, pre-alerted, or announced verbally (e.g. 1NT ranges, transfers).
+        </p>
+        <a href="http://web2.acbl.org/documentLibrary/play/AlertProcedures.pdf" target="_blank" rel="noopener" class="btn btn-outline btn-sm">
+          Alert Procedures (PDF) ↗
+        </a>
+      </div>
+
+      <!-- Laws of Duplicate Bridge -->
+      <div class="card">
+        <h3 class="card-title">📖 Laws of Duplicate Bridge</h3>
+        <p class="card-desc">
+          The international rulebook covering leads out of turn, revokes, bidding irregularities, and director authority.
+        </p>
+        <a href="http://web2.acbl.org/documentlibrary/play/Laws-of-Duplicate-Bridge.pdf" target="_blank" rel="noopener" class="btn btn-outline btn-sm">
+          Complete Laws (PDF) ↗
+        </a>
+      </div>
+
+      <!-- Zero Tolerance Policy -->
+      <div class="card">
+        <h3 class="card-title">🤝 Zero Tolerance Policy</h3>
+        <p class="card-desc">
+          ACBL and VBC standards of etiquette to maintain a polite, welcoming, and enjoyable environment for everyone.
+        </p>
+        <a href="https://s3.amazonaws.com/cdn.acbl.org/wp-content/uploads/2014/02/ZT-Handout-for-Clubs.pdf" target="_blank" rel="noopener" class="btn btn-outline btn-sm">
+          Zero Tolerance Guide (PDF) ↗
+        </a>
+      </div>
+
+      <!-- How to Play Bridge -->
+      <div class="card">
+        <h3 class="card-title">🎓 How to Play Bridge (ACBL)</h3>
+        <p class="card-desc">
+          Interactive beginner tutorial teaching trick-taking, scoring, trump suits, and the fundamentals of bidding.
+        </p>
+        <a href="https://www.acbl.org/learn_page/how-to-play-bridge/" target="_blank" rel="noopener" class="btn btn-outline btn-sm">
+          ACBL Learn Hub ↗
+        </a>
+      </div>
+
+      <!-- New Tricks Bridge Club -->
+      <div class="card">
+        <h3 class="card-title">🎬 New Tricks Video Tutorials</h3>
+        <p class="card-desc">
+          High-quality video series covering standard American bidding, defensive leads, counting tricks, and card play tips.
+        </p>
+        <a href="https://www.youtube.com/c/NewTricksBridgeClub" target="_blank" rel="noopener" class="btn btn-outline btn-sm">
+          Watch Video Lessons ↗
+        </a>
+      </div>
+    </div>
+
+    <!-- Quick Table Etiquette Reminders -->
+    <div class="card" style="padding: 24px; background: var(--bg-card);">
+      <h3 class="card-title" style="margin-bottom: 12px;">🌟 Helpful Duplicate Bridge Etiquette Reminders</h3>
+      <div class="grid-2" style="gap: 20px;">
+        <div style="font-size: 0.95rem; color: var(--text-muted); display: flex; flex-direction: column; gap: 10px;">
+          <div>✅ <strong>Call the Director Kindly:</strong> When an infraction occurs (lead out of turn, insufficient bid), raise your hand and say "Director, please!" in a friendly tone. Calling the director protects everyone's rights.</div>
+          <div>✅ <strong>Bidding Box Courtesy:</strong> Decide what you are going to bid before reaching for the bidding box to avoid hesitations and unauthorized information.</div>
+        </div>
+        <div style="font-size: 0.95rem; color: var(--text-muted); display: flex; flex-direction: column; gap: 10px;">
+          <div>✅ <strong>Opening Lead Before Writing:</strong> On defense, make your opening lead face down before writing the contract on your score sheet or entering it into the electronic scoring tablet.</div>
+          <div>✅ <strong>Welcoming Atmosphere:</strong> Be encouraging to beginners and visitors. A smile and a friendly greeting make bridge a wonderful game for everyone!</div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <h3>Vancouver Bridge Club</h3>
+        <p style="font-size: 0.9rem; line-height: 1.5; margin-bottom: 12px;">
+          A non-profit duplicate bridge club operated by ACBL Unit 452 in southwest Washington State.
+        </p>
+        <p style="font-size: 0.85rem; color: #64748b;">
+          6503 E Mill Plain Blvd, Suite H • Vancouver, WA 98661
+        </p>
+      </div>
+      <div class="footer-links-col">
+        <h4>Navigation</h4>
+        <ul class="footer-links-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="schedule.html">Schedule & Calendar</a></li>
+          <li><a href="results.html">Game Results</a></li>
+          <li><a href="partnership.html">Partnership Desk</a></li>
+        </ul>
+      </div>
+      <div class="footer-links-col">
+        <h4>Resources</h4>
+        <ul class="footer-links-list">
+          <li><a href="learn.html">Lessons & Alerts</a></li>
+          <li><a href="governance.html">Unit 452 Board</a></li>
+          <li><a href="community.html">Cartoons & Gallery</a></li>
+        </ul>
+      </div>
+      <div class="footer-links-col">
+        <h4>Affiliations</h4>
+        <ul class="footer-links-list">
+          <li><a href="https://www.acbl.org/" target="_blank" rel="noopener">ACBL Official Website ↗</a></li>
+          <li><a href="https://web2.acbld20.org/" target="_blank" rel="noopener">ACBL District 20 ↗</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div>&copy; 2026 Vancouver Bridge Club (ACBL Unit 452). All rights reserved.</div>
+      <div>Designed with modern accessibility standards (WCAG 2.1)</div>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

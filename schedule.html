@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" data-text-size="normal">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Schedule & Calendar | Vancouver Bridge Club (ACBL Unit 452)</title>
+  <meta name="description" content="Monthly calendar and weekly game schedule for Vancouver Bridge Club. Open pairs, 0-750, Swiss teams, mentoring, and STaC special games.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Accessibility Toolbar -->
+  <div class="accessibility-bar" role="region" aria-label="Accessibility Toolbar">
+    <div class="accessibility-container">
+      <div class="access-club-badge">
+        <span class="access-badge-dot"></span>
+        <span>Vancouver Bridge Club • ACBL Unit 452 • Club #118489</span>
+      </div>
+      <div class="access-controls">
+        <div class="font-scale-group" title="Adjust text size for easier reading">
+          <span style="font-size:0.75rem; margin-right:4px;">Text Size:</span>
+          <button class="font-scale-btn active" data-size="normal">A</button>
+          <button class="font-scale-btn" data-size="large">A+</button>
+          <button class="font-scale-btn" data-size="xlarge">A++</button>
+        </div>
+        <button class="theme-toggle-btn" id="theme-toggle-btn">🌙 Dark Mode</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="header-container">
+      <a href="index.html" class="brand-link">
+        <img src="assets/logo.svg" alt="Vancouver Bridge Club Logo" class="brand-logo-img">
+      </a>
+      <button class="mobile-menu-toggle" id="mobile-menu-btn" aria-label="Toggle navigation menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+      <nav class="main-nav" id="main-nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="schedule.html" class="nav-link">📅 Schedule & Calendar</a>
+        <a href="results.html" class="nav-link">🏆 Results & Scores</a>
+        <a href="partnership.html" class="nav-link">🤝 Partnership Desk</a>
+        <a href="learn.html" class="nav-link">📚 Lessons & Rules</a>
+        <a href="governance.html" class="nav-link">🏛️ Unit 452 & Board</a>
+        <a href="community.html" class="nav-link">🎨 Gallery & Links</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Container -->
+  <main class="main-container">
+
+    <div class="section-header">
+      <span class="section-tag">📅 Game Calendar</span>
+      <h1 class="section-title">Schedule & Event Calendar</h1>
+      <p class="section-subtitle">
+        Explore our upcoming duplicate bridge sessions, lessons, Swiss team championships, and District 20 STaC silver point games. Click any session for details.
+      </p>
+    </div>
+
+    <!-- Filter Bar -->
+    <div class="filter-bar">
+      <button class="filter-btn cal-filter-btn active" data-filter="all">All Sessions</button>
+      <button class="filter-btn cal-filter-btn" data-filter="open">Open Pairs</button>
+      <button class="filter-btn cal-filter-btn" data-filter="limited">0-750 & 0-1500 Limited</button>
+      <button class="filter-btn cal-filter-btn" data-filter="teams">Swiss Teams (8-is-Enough)</button>
+      <button class="filter-btn cal-filter-btn" data-filter="mentoring">Mentored / Novice Play</button>
+      <button class="filter-btn cal-filter-btn" data-filter="special">⭐ STaC & Special Games</button>
+    </div>
+
+    <!-- Interactive Calendar Card -->
+    <div class="card" style="margin-bottom: 40px; padding: 24px;">
+      <div class="calendar-view-controls">
+        <h2 class="calendar-month-title" id="calendar-current-title">August 2026</h2>
+        <div style="display: flex; gap: 8px;">
+          <button class="btn btn-outline btn-sm" id="cal-prev-btn">◀ Previous Month</button>
+          <button class="btn btn-outline btn-sm" id="cal-next-btn">Next Month ▶</button>
+          <a href="https://web2.acbld20.org/vbc/U452_calendar.pdf" target="_blank" rel="noopener" class="btn btn-primary btn-sm">
+            📄 Download Official PDF
+          </a>
+        </div>
+      </div>
+
+      <!-- Calendar Grid injected by js/calendar.js -->
+      <div class="calendar-grid" id="calendar-grid-container"></div>
+    </div>
+
+    <!-- Pricing & Guidelines Info -->
+    <div class="grid-3" style="margin-bottom: 40px;">
+      <div class="card">
+        <h3 class="card-title">💰 Table Fees & Payment</h3>
+        <ul style="list-style: disc; margin-left: 20px; font-size: 0.95rem; color: var(--text-muted); display: flex; flex-direction: column; gap: 6px;">
+          <li>Regular club games: <strong>$8.00</strong> per player</li>
+          <li>STaC & Upgraded games: <strong>$9.00 - $10.00</strong></li>
+          <li>Tuesday 10:30 AM mini-lessons: <strong>Free</strong> with game entry</li>
+          <li>Cash and club coupons accepted at the director desk</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3 class="card-title">⏰ Game Times & Etiquette</h3>
+        <p class="card-desc">
+          Games start promptly at scheduled times. Please arrive 15 minutes prior to game time to allow directors to set the movement and balance the tables.
+        </p>
+        <a href="learn.html" class="btn btn-outline btn-sm" style="align-self: flex-start;">Review Club Etiquette →</a>
+      </div>
+
+      <div class="card">
+        <h3 class="card-title">🤝 Guaranteed Host Program</h3>
+        <p class="card-desc">
+          Coming alone? Saturday games feature a guaranteed standby host so you are assured a game! You can also connect with players anytime at our digital desk.
+        </p>
+        <a href="partnership.html" class="btn btn-outline btn-sm" style="align-self: flex-start;">Visit Partnership Desk →</a>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Modal Event Details -->
+  <div class="modal-backdrop" id="event-modal-backdrop" role="dialog" aria-modal="true">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3 class="modal-title" id="modal-event-title">Event Details</h3>
+        <button class="modal-close-btn" id="event-modal-close" aria-label="Close modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="form-group">
+          <label class="form-label">Date & Time</label>
+          <div id="modal-event-date" style="font-weight: 700; color: var(--primary);"></div>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Category</label>
+          <div id="modal-event-type" class="badge badge-blue"></div>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Table Fee</label>
+          <div id="modal-event-fee" style="font-weight: 600;"></div>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Description & Masterpoint Notes</label>
+          <div id="modal-event-notes" style="color: var(--text-muted); font-size: 0.95rem;"></div>
+        </div>
+        <div style="margin-top: 24px; display: flex; gap: 10px;">
+          <a href="partnership.html" class="btn btn-primary btn-sm">Find a Partner for this Session</a>
+          <a href="https://maps.google.com/?q=6503+E+Mill+Plain+Blvd+Suite+H+Vancouver+WA+98661" target="_blank" rel="noopener" class="btn btn-outline btn-sm">Club Directions</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <h3>Vancouver Bridge Club</h3>
+        <p style="font-size: 0.9rem; line-height: 1.5; margin-bottom: 12px;">
+          A non-profit duplicate bridge club operated by ACBL Unit 452 in southwest Washington State.
+        </p>
+        <p style="font-size: 0.85rem; color: #64748b;">
+          6503 E Mill Plain Blvd, Suite H • Vancouver, WA 98661
+        </p>
+      </div>
+      <div class="footer-links-col">
+        <h4>Navigation</h4>
+        <ul class="footer-links-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="schedule.html">Schedule & Calendar</a></li>
+          <li><a href="results.html">Game Results</a></li>
+          <li><a href="partnership.html">Partnership Desk</a></li>
+        </ul>
+      </div>
+      <div class="footer-links-col">
+        <h4>Resources</h4>
+        <ul class="footer-links-list">
+          <li><a href="learn.html">Lessons & Alerts</a></li>
+          <li><a href="governance.html">Unit 452 Board</a></li>
+          <li><a href="community.html">Cartoons & Gallery</a></li>
+        </ul>
+      </div>
+      <div class="footer-links-col">
+        <h4>Affiliations</h4>
+        <ul class="footer-links-list">
+          <li><a href="https://www.acbl.org/" target="_blank" rel="noopener">ACBL Official Website ↗</a></li>
+          <li><a href="https://web2.acbld20.org/" target="_blank" rel="noopener">ACBL District 20 ↗</a></li>
+          <li><a href="https://tcgcloud.bridgefinesse.com/ClubWebHost/118489/" target="_blank" rel="noopener">The Common Game ↗</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div>&copy; 2026 Vancouver Bridge Club (ACBL Unit 452). All rights reserved.</div>
+      <div>Designed with modern accessibility standards (WCAG 2.1)</div>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/calendar.js"></script>
+</body>
+</html>

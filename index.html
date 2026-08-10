@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" data-text-size="normal">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vancouver Bridge Club (VBC #118489) | ACBL Unit 452 - Vancouver, WA</title>
+  <meta name="description" content="Welcome to the Vancouver Bridge Club (ACBL Unit 452) in Southwest Washington. Duplicate bridge games, lessons, masterpoint races, and partnership matchmaking.">
+  
+  <!-- Modern Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Senior Accessibility & High-Contrast Toolbar -->
+  <div class="accessibility-bar" role="region" aria-label="Accessibility Toolbar">
+    <div class="accessibility-container">
+      <div class="access-club-badge">
+        <span class="access-badge-dot"></span>
+        <span>Vancouver Bridge Club • ACBL Unit 452 • Club #118489</span>
+      </div>
+      <div class="access-controls">
+        <div class="font-scale-group" title="Adjust text size for easier reading">
+          <span style="font-size:0.75rem; margin-right:4px;">Text Size:</span>
+          <button class="font-scale-btn active" data-size="normal" aria-label="Normal font size">A</button>
+          <button class="font-scale-btn" data-size="large" aria-label="Large font size">A+</button>
+          <button class="font-scale-btn" data-size="xlarge" aria-label="Extra large font size">A++</button>
+        </div>
+        <button class="theme-toggle-btn" id="theme-toggle-btn" aria-label="Toggle dark mode">
+          🌙 Dark Mode
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Navigation Header -->
+  <header class="site-header">
+    <div class="header-container">
+      <a href="index.html" class="brand-link" aria-label="Vancouver Bridge Club Home">
+        <img src="assets/logo.svg" alt="Vancouver Bridge Club Logo" class="brand-logo-img">
+      </a>
+
+      <button class="mobile-menu-toggle" id="mobile-menu-btn" aria-label="Toggle navigation menu" aria-expanded="false">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+
+      <nav class="main-nav" id="main-nav" aria-label="Main Navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="schedule.html" class="nav-link">📅 Schedule & Calendar</a>
+        <a href="results.html" class="nav-link">🏆 Results & Scores</a>
+        <a href="partnership.html" class="nav-link">🤝 Partnership Desk</a>
+        <a href="learn.html" class="nav-link">📚 Lessons & Rules</a>
+        <a href="governance.html" class="nav-link">🏛️ Unit 452 & Board</a>
+        <a href="community.html" class="nav-link">🎨 Gallery & Links</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Page Content -->
+  <main class="main-container">
+
+    <!-- Hero Banner -->
+    <section class="hero-banner">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="suit-pip suit-spade">♠</span>
+          <span class="suit-pip suit-heart">♥</span>
+          <span>Southwest Washington's Premier Bridge Club</span>
+          <span class="suit-pip suit-diamond">♦</span>
+          <span class="suit-pip suit-club">♣</span>
+        </div>
+        <h1 class="hero-title">Vancouver Bridge Club</h1>
+        <p class="hero-desc">
+          Welcoming duplicate bridge players of all experience levels—from novices to Life Masters. Join us for sanctioned games, mini-lessons, Swiss teams, and friendly competition.
+        </p>
+        <div class="hero-actions">
+          <a href="schedule.html" class="btn btn-accent">📅 View Game Schedule</a>
+          <a href="results.html" class="btn btn-outline-light">🏆 Latest ACBL Scores</a>
+          <a href="partnership.html" class="btn btn-outline-light">🤝 Need a Partner?</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Today at the Club Dynamic Highlight -->
+    <section class="today-status-card">
+      <div>
+        <div class="today-header">
+          <div class="live-indicator">
+            <span class="access-badge-dot"></span>
+            <span>Live Today</span>
+          </div>
+          <span id="today-date-badge" style="font-weight: 700; color: var(--primary);">Monday, August 10</span>
+        </div>
+        <h2 style="font-family: var(--font-heading); font-size: 1.5rem; margin-bottom: 4px;">Today's Sessions at VBC</h2>
+        <p style="color: var(--text-muted); font-size: 0.95rem;">Regular table fee: <strong>$8.00</strong> • Standbys guaranteed on weekends</p>
+
+        <!-- Dynamically injected by js/app.js -->
+        <div class="today-games-list" id="today-games-container">
+          <div class="today-game-item">
+            <div class="game-time-badge">11:30 AM</div>
+            <div class="game-info">
+              <div class="game-title-text">Open Pairs & 0-750 Pairs</div>
+              <div class="game-details-text">Full masterpoints with The Common Game hand analysis • Table Fee: $8.00</div>
+            </div>
+            <div>
+              <a href="partnership.html" class="btn btn-sm btn-outline">Find Partner</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div style="text-align: right;">
+        <a href="https://maps.google.com/?q=6503+E+Mill+Plain+Blvd+Suite+H+Vancouver+WA+98661" target="_blank" rel="noopener" class="btn btn-primary" style="margin-bottom:8px;">
+          📍 Get Directions
+        </a>
+        <div style="font-size: 0.85rem; color: var(--text-subtle);">6503 E Mill Plain Blvd, Suite H</div>
+      </div>
+    </section>
+
+    <!-- Quick-Action Navigation Grid -->
+    <section style="margin-bottom: 40px;">
+      <div class="section-header">
+        <span class="section-tag">Quick Access</span>
+        <h2 class="section-title">Everything You Need at VBC</h2>
+        <p class="section-subtitle">Find upcoming games, check masterpoints, post partnership requests, or access club governance.</p>
+      </div>
+
+      <div class="grid-3">
+        <!-- Card 1 -->
+        <div class="card">
+          <div class="card-icon"><span class="suit-pip suit-spade">♠</span></div>
+          <h3 class="card-title">Interactive Schedule</h3>
+          <p class="card-desc">Browse our weekly schedule and monthly calendar with filters for Open, 0-750, Mentoring, and STaC silver point games.</p>
+          <a href="schedule.html" class="btn btn-outline btn-sm">Open Calendar →</a>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card">
+          <div class="card-icon"><span class="suit-pip suit-heart">♥</span></div>
+          <h3 class="card-title">Scores & Hand Records</h3>
+          <p class="card-desc">Check ACBL Live for Clubs results (#118489), The Common Game hand records, and Unit 452 Masterpoint races.</p>
+          <a href="results.html" class="btn btn-outline btn-sm">View Game Results →</a>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card">
+          <div class="card-icon"><span class="suit-pip suit-diamond">♦</span></div>
+          <h3 class="card-title">Partnership Desk</h3>
+          <p class="card-desc">Need a partner for an upcoming session? Browse active requests or post your own availability with your preferred bidding system.</p>
+          <a href="partnership.html" class="btn btn-outline btn-sm">Find a Partner →</a>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="card">
+          <div class="card-icon"><span class="suit-pip suit-club">♣</span></div>
+          <h3 class="card-title">Lessons & Bridge Basics</h3>
+          <p class="card-desc">Free Tuesday mini-lessons at 10:30 AM, ACBL convention charts, alert procedures, and learning resources for novices.</p>
+          <a href="learn.html" class="btn btn-outline btn-sm">Explore Lessons →</a>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="card">
+          <div class="card-icon">🏛️</div>
+          <h3 class="card-title">Unit 452 Governance</h3>
+          <p class="card-desc">Meet your Board of Directors, review Unit Bylaws, and access archived monthly meeting minutes and financial reports.</p>
+          <a href="governance.html" class="btn btn-outline btn-sm">View Board & Minutes →</a>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="card">
+          <div class="card-icon">🎨</div>
+          <h3 class="card-title">Gallery & Sister Clubs</h3>
+          <p class="card-desc">Enjoy classic bridge cartoons by Gary Bowers, tournament photos, In Memoriam tributes, and District 20 links.</p>
+          <a href="community.html" class="btn btn-outline btn-sm">Visit Gallery →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Weekly Schedule Summary Table -->
+    <section style="margin-bottom: 40px;">
+      <div class="section-header">
+        <span class="section-tag">Weekly Timetable</span>
+        <h2 class="section-title">Regular Duplicate Sessions</h2>
+        <p class="section-subtitle">Sessions are held at the Vancouver Bridge Club facility. Please arrive 15 minutes before game time.</p>
+      </div>
+
+      <div class="schedule-table-card">
+        <div class="table-responsive">
+          <table class="modern-table">
+            <thead>
+              <tr>
+                <th>Day</th>
+                <th>Time</th>
+                <th>Game / Session</th>
+                <th>Skill Level / Category</th>
+                <th>Table Fee</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Monday</strong></td>
+                <td>11:30 AM</td>
+                <td>Open Pairs & 0-750 Pairs</td>
+                <td><span class="badge badge-blue">Open / 0-750</span></td>
+                <td>$8.00</td>
+                <td><a href="partnership.html" class="btn btn-sm btn-outline">Find Partner</a></td>
+              </tr>
+              <tr>
+                <td><strong>Tuesday</strong></td>
+                <td>10:30 AM</td>
+                <td>Bridge Basics Mini-Lesson</td>
+                <td><span class="badge badge-green">Free Lesson</span></td>
+                <td>Free</td>
+                <td><a href="learn.html" class="btn btn-sm btn-outline">Details</a></td>
+              </tr>
+              <tr>
+                <td><strong>Tuesday</strong></td>
+                <td>11:30 AM</td>
+                <td>Mentored Play / Non-Life Master Pairs</td>
+                <td><span class="badge badge-amber">Mentored & Novice</span></td>
+                <td>$8.00</td>
+                <td><a href="partnership.html" class="btn btn-sm btn-outline">Find Partner</a></td>
+              </tr>
+              <tr>
+                <td><strong>Wednesday</strong></td>
+                <td>11:30 AM</td>
+                <td>Open Pairs (Common Game)</td>
+                <td><span class="badge badge-blue">Open Pairs</span></td>
+                <td>$8.00</td>
+                <td><a href="partnership.html" class="btn btn-sm btn-outline">Find Partner</a></td>
+              </tr>
+              <tr>
+                <td><strong>Wednesday</strong></td>
+                <td>6:30 PM</td>
+                <td>Eight-is-Enough Swiss Teams</td>
+                <td><span class="badge badge-purple">Swiss Teams</span></td>
+                <td>$8.00</td>
+                <td><a href="partnership.html" class="btn btn-sm btn-outline">Join Team</a></td>
+              </tr>
+              <tr>
+                <td><strong>Thursday</strong></td>
+                <td>11:30 AM</td>
+                <td>0-1500 Limited & Open Pairs</td>
+                <td><span class="badge badge-blue">0-1500 & Open</span></td>
+                <td>$8.00</td>
+                <td><a href="partnership.html" class="btn btn-sm btn-outline">Find Partner</a></td>
+              </tr>
+              <tr>
+                <td><strong>Friday</strong></td>
+                <td>11:30 AM</td>
+                <td>Friday Open Pairs Championship</td>
+                <td><span class="badge badge-blue">Open Pairs</span></td>
+                <td>$8.00</td>
+                <td><a href="partnership.html" class="btn btn-sm btn-outline">Find Partner</a></td>
+              </tr>
+              <tr>
+                <td><strong>Saturday</strong></td>
+                <td>11:00 AM</td>
+                <td>Weekend Open Pairs (Guaranteed Host)</td>
+                <td><span class="badge badge-blue">Open Pairs</span></td>
+                <td>$8.00</td>
+                <td><a href="partnership.html" class="btn btn-sm btn-outline">Find Partner</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Location, Parking & Contact Section -->
+    <section class="grid-2" style="margin-bottom: 30px;">
+      <div class="card">
+        <h3 class="card-title">📍 Club Location & Directions</h3>
+        <p class="card-desc" style="margin-bottom: 12px;">
+          <strong>Vancouver Bridge Club (Unit 452)</strong><br>
+          6503 E Mill Plain Blvd, Suite H<br>
+          Vancouver, WA 98661
+        </p>
+        <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 16px;">
+          Conveniently located with plenty of free, well-lit parking and easy ground-level wheelchair access.
+        </p>
+        <a href="https://maps.google.com/?q=6503+E+Mill+Plain+Blvd+Suite+H+Vancouver+WA+98661" target="_blank" rel="noopener" class="btn btn-primary" style="align-self: flex-start;">
+          Open in Google Maps ↗
+        </a>
+      </div>
+
+      <div class="card">
+        <h3 class="card-title">📞 Contact & Club Contacts</h3>
+        <ul style="list-style: none; display: flex; flex-direction: column; gap: 10px; font-size: 0.95rem; margin-bottom: 16px;">
+          <li><strong>Club Phone:</strong> <a href="tel:3607373772">(360) 737-3772</a></li>
+          <li><strong>Club Email:</strong> <a href="mailto:vancouverbridgeclub@gmail.com">vancouverbridgeclub@gmail.com</a></li>
+          <li><strong>ACBL Sanction:</strong> Club #118489 • Unit 452 • District 20</li>
+          <li><strong>Partnership Help:</strong> <a href="partnership.html">Visit Partnership Desk</a></li>
+        </ul>
+        <p style="font-size: 0.85rem; color: var(--text-subtle);">
+          For questions regarding special tournament dates, STaC games, or beginner lessons, please reach out to our club coordinators.
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <h3>Vancouver Bridge Club</h3>
+        <p style="font-size: 0.9rem; line-height: 1.5; margin-bottom: 12px;">
+          A non-profit duplicate bridge club operated by ACBL Unit 452 in southwest Washington State.
+        </p>
+        <p style="font-size: 0.85rem; color: #64748b;">
+          6503 E Mill Plain Blvd, Suite H • Vancouver, WA 98661
+        </p>
+      </div>
+
+      <div class="footer-links-col">
+        <h4>Navigation</h4>
+        <ul class="footer-links-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="schedule.html">Schedule & Calendar</a></li>
+          <li><a href="results.html">Game Results</a></li>
+          <li><a href="partnership.html">Partnership Desk</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links-col">
+        <h4>Resources</h4>
+        <ul class="footer-links-list">
+          <li><a href="learn.html">Lessons & Alerts</a></li>
+          <li><a href="governance.html">Unit 452 Board</a></li>
+          <li><a href="governance.html">Bylaws & Minutes</a></li>
+          <li><a href="community.html">Cartoons & Gallery</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links-col">
+        <h4>Affiliations</h4>
+        <ul class="footer-links-list">
+          <li><a href="https://www.acbl.org/" target="_blank" rel="noopener">ACBL Official Website ↗</a></li>
+          <li><a href="https://web2.acbld20.org/" target="_blank" rel="noopener">ACBL District 20 ↗</a></li>
+          <li><a href="https://tcgcloud.bridgefinesse.com/ClubWebHost/118489/" target="_blank" rel="noopener">The Common Game ↗</a></li>
+          <li><a href="https://my.acbl.org/club-results/118489" target="_blank" rel="noopener">ACBL Live for Clubs ↗</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div>&copy; 2026 Vancouver Bridge Club (ACBL Unit 452). All rights reserved.</div>
+      <div>Designed with modern accessibility standards (WCAG 2.1)</div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
