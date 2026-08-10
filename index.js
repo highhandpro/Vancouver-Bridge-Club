@@ -604,7 +604,7 @@ function renderEventsForDay(dateStr) {
       if (res.partnership && res.partnership.some(p => p.memberId === currentPlayer.id)) isUserBooked = true;
     }
     
-    const bookedIndicator = isUserBooked ? '<span style="color:#6ee7b7; font-size:0.6rem">✓ Booked</span>' : `${tablesCount} Tables Seated`;
+    const bookedIndicator = isUserBooked ? '<span style="color:#6ee7b7; font-size:0.6rem"> Booked</span>' : `${tablesCount} Tables Seated`;
     
     badge.innerHTML = `
       <span class="event-badge-time">${event.time}</span>
@@ -1023,7 +1023,7 @@ function renderSeatSlot(tableIndex, direction, playerId) {
     
     // Show 'X' clear button only if director OR if it is player's own seat
     const showClear = (userRole === 'director' || isMySeat) ? 
-      `<button class="btn-clear-seat" onclick="event.stopPropagation(); clearSeat(${tableIndex}, '${direction}')">✕</button>` : '';
+      `<button class="btn-clear-seat" onclick="event.stopPropagation(); clearSeat(${tableIndex}, '${direction}')"></button>` : '';
       
     el.innerHTML = `
       <div class="seat-player-initials" style="${isMySeat ? 'background-color:var(--success-light); color:#6ee7b7;' : ''}">${escapeHtml(initials)}</div>
@@ -1402,7 +1402,7 @@ function renderWaitlistTab() {
       
       // X clear button visible only if director OR if it is player's own entry
       const showClear = (userRole === 'director' || (currentPlayer && currentPlayer.id === player.id)) ? 
-        `<button class="btn-clear-seat" onclick="event.stopPropagation(); removePlayerFromPartnership(${player.id})" style="position:static; margin-left: 8px;">✕</button>` : '';
+        `<button class="btn-clear-seat" onclick="event.stopPropagation(); removePlayerFromPartnership(${player.id})" style="position:static; margin-left: 8px;"></button>` : '';
         
       li.innerHTML = `
         <div>
@@ -1440,7 +1440,7 @@ function renderWaitlistTab() {
       li.style.cursor = 'default';
       
       const showClear = (userRole === 'director' || (currentPlayer && currentPlayer.id === player.id)) ? 
-        `<button class="btn-clear-seat" onclick="removePlayerFromWaitlist(${index})" style="position:static; margin-left: 8px;">✕</button>` : '';
+        `<button class="btn-clear-seat" onclick="removePlayerFromWaitlist(${index})" style="position:static; margin-left: 8px;"></button>` : '';
         
       li.innerHTML = `
         <div>

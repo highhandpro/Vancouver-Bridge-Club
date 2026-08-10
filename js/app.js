@@ -52,9 +52,9 @@ function initAccessibility() {
 
 function updateThemeButtonText(btn, theme) {
   if (theme === 'dark') {
-    btn.innerHTML = '☀️ Light Mode';
+    btn.innerHTML = 'Light Mode';
   } else {
-    btn.innerHTML = '🌙 Dark Mode';
+    btn.innerHTML = 'Dark Mode';
   }
 }
 

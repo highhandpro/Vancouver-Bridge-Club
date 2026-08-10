@@ -67,7 +67,7 @@ function renderPartnershipPosts(posts) {
       </p>
 
       <div class="partner-contact-row">
-        <span class="badge badge-green" style="font-size: 0.85rem;">📞 ${escapeHtml(post.contact)}</span>
+        <span class="badge badge-green" style="font-size: 0.85rem;">Phone: ${escapeHtml(post.contact)}</span>
       </div>
     </div>
   `).join('');

@@ -4,7 +4,7 @@ Modern, accessible, and responsive website for the **Vancouver Bridge Club (ACBL
 
 ---
 
-## 🌟 Key Features
+## Key Features
 
 - **High-Contrast & Senior-Friendly Accessibility**: Built-in 1-click **Text Size Resizing** (Normal / Large / Extra Large) and **Dark/Light Mode** toggles.
 - **Dynamic "Today at VBC" Widget**: Automatically calculates the day of the week and displays today's sessions, game times, table fee ($8.00), and directions.
@@ -17,7 +17,7 @@ Modern, accessible, and responsive website for the **Vancouver Bridge Club (ACBL
 
 ---
 
-## 🚀 Instant Deployment with GitHub Pages
+## Instant Deployment with GitHub Pages
 
 This repository is built with standard semantic HTML5, modern CSS3, and vanilla JavaScript (zero build step or npm dependencies required).
 
@@ -30,7 +30,7 @@ This repository is built with standard semantic HTML5, modern CSS3, and vanilla 
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ```
 ├── index.html              # Home portal (Hero, Today at VBC, weekly schedule summary, map & contacts)
@@ -54,7 +54,7 @@ This repository is built with standard semantic HTML5, modern CSS3, and vanilla 
 
 ---
 
-## ✏️ How to Update Club Content
+## How to Update Club Content
 
 All recurring club information (game times, upcoming events, board officers, announcements) is centralized in `js/data.js` for easy updates by volunteers and club managers without altering HTML code:
 
@@ -65,7 +65,7 @@ All recurring club information (game times, upcoming events, board officers, ann
 
 ---
 
-## 📜 License & Acknowledgements
+## License & Acknowledgements
 
 Created for **Vancouver Bridge Club (ACBL Unit 452)** in Southwest Washington.  
 Affiliated with the **American Contract Bridge League (ACBL)** and **District 20**.
